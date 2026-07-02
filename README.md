@@ -2,8 +2,6 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=1600&color=0EA5E9&center=true&vCenter=true&width=560&lines=I+use+Claude+Code+in+my+workflow)](https://github.com/superkush06)
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kushagra%20Behl-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kushagra-behl/)
 &nbsp;
 [![Email](https://img.shields.io/badge/Email-kushagra%40gatech.edu-0EA5E9?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kushagra@gatech.edu)
@@ -12,24 +10,27 @@
 
 <br>
 
-## About
+## Hey, I'm Kush 👋
 
-Math &amp; Computing student at **Georgia Tech**, building ML systems for markets.
+Math &amp; Computing at **Georgia Tech**. My interests are machine learning, markets, and startups — mostly the machinery underneath all three.
 
-<table>
-<tr><td>🔬</td><td><b>ML Research @ MIT</b> — LLM-based argument-mining systems · <i>Center for Collective Intelligence</i></td></tr>
-<tr><td>📊</td><td><b>Research @ Wharton</b> — health economics</td></tr>
-<tr><td>🚀</td><td><b>Growth &amp; Software Engineering @ Slashy</b> <code>YC S25</code> — LLM optimization, agentic workflows, web</td></tr>
-<tr><td>🧮</td><td><b>Quant roots</b> — DECA Finance ICDC (2× intl qualifier) · 3rd in PA, Financial Math · SIG Discovery</td></tr>
-</table>
+**Right now:**
+
+- 🔬 &nbsp;ML research @ **MIT** — LLM-based argument-mining systems · *Center for Collective Intelligence*
+- 📊 &nbsp;Health-economics research @ **Wharton**
+- 🚀 &nbsp;Growth &amp; software engineering @ **Slashy** `YC S25` — LLM optimization, agentic workflows, web
+
+**Before that:** DECA ICDC Business Finance (2× international qualifier) · 3rd in Pennsylvania, Financial Math · Susquehanna (SIG) Discovery.
 
 <br>
 
-## ⚙️ The Agent Lab
+## Projects
 
-The repositories below are an ongoing experiment in **agentic engineering**: I set the roadmap and the quality bar, and AI agents implement, test, and ship each library through an automated pipeline that holds every repo to the same standard — a test suite, green CI, and a theory write-up. Specifying correct systems and verifying machine-built code is the skill I'm practicing here — the same one I use at Slashy. The libraries double as my study curriculum: each implements math I want to know cold.
+A shelf of quant-finance and ML libraries — each with a test suite and CI, most with a theory write-up. The ones marked ⭐ have visual walkthroughs in their READMEs.
 
-### 📈 Quantitative Finance
+<sub>🤖 Disclosure: I use Claude Code as a core part of my workflow — these libraries are built and shipped through it.</sub>
+
+### Quantitative finance
 
 | Project | What it is |
 | :-- | :-- |
@@ -39,7 +40,7 @@ The repositories below are an ongoing experiment in **agentic engineering**: I s
 | **[portopt](https://github.com/superkush06/portopt)** | Portfolio optimization — Markowitz, Black-Litterman, risk parity, Ledoit-Wolf shrinkage |
 | **[optune](https://github.com/superkush06/optune)** &nbsp;·&nbsp; **[kalman](https://github.com/superkush06/kalman)** &nbsp;·&nbsp; **[garch](https://github.com/superkush06/garch)** &nbsp;·&nbsp; **[risk](https://github.com/superkush06/risk)** | Options pricing + Greeks via AAD · Kalman / EKF / UKF filters · GARCH-family vol models · VaR / CVaR & stress testing |
 
-### 🤖 Machine Learning
+### Machine learning
 
 | Project | What it is |
 | :-- | :-- |
@@ -48,7 +49,7 @@ The repositories below are an ongoing experiment in **agentic engineering**: I s
 | **[tinydiff](https://github.com/superkush06/tinydiff)** | A reverse-mode autodiff engine in < 500 lines — trains real MLPs on NumPy alone |
 | **[rl-gym](https://github.com/superkush06/rl-gym)** &nbsp;·&nbsp; **[bayes](https://github.com/superkush06/bayes)** &nbsp;·&nbsp; **[regimes](https://github.com/superkush06/regimes)** | Q-learning / SARSA / REINFORCE / A2C · MCMC (HMC) + variational inference · HMM regime detection |
 
-<sub>⭐ = has a visual walkthrough in its README &nbsp;·&nbsp; also in the lab: **[mlrun](https://github.com/superkush06/mlrun)** (self-hosted experiment tracker) and a quant sports-betting suite — [oddslib](https://github.com/superkush06/oddslib) · [arbfinder](https://github.com/superkush06/arbfinder) · [dixoncoles](https://github.com/superkush06/dixoncoles) · [kelly-bet](https://github.com/superkush06/kelly-bet)</sub>
+<sub>Also on the shelf: **[mlrun](https://github.com/superkush06/mlrun)** (self-hosted experiment tracker) and a quant sports-betting suite — [oddslib](https://github.com/superkush06/oddslib) · [arbfinder](https://github.com/superkush06/arbfinder) · [dixoncoles](https://github.com/superkush06/dixoncoles) · [kelly-bet](https://github.com/superkush06/kelly-bet)</sub>
 
 <br>
 
@@ -69,10 +70,6 @@ The repositories below are an ongoing experiment in **agentic engineering**: I s
 ## Stats
 
 <div align="center">
-
-<sub>Commit activity includes the agent pipeline described above.</sub>
-
-<br><br>
 
 <img height="170" alt="stats" src="https://github-readme-stats.vercel.app/api?username=superkush06&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=tokyonight&icon_color=0EA5E9&title_color=0EA5E9&hide_title=true" />
 &nbsp;
