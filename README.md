@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=1600&color=0EA5E9&center=true&vCenter=true&width=560&lines=I+direct+AI+agents+that+ship+verified+software)](https://github.com/superkush06)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3200&pause=1600&color=0EA5E9&center=true&vCenter=true&width=560&lines=I+use+Claude+Code+in+my+workflow)](https://github.com/superkush06)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Kushagra%20Behl-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kushagra-behl/)
 &nbsp;
