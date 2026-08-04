@@ -45,15 +45,14 @@ THEMES = {
 }
 
 ROWS = [
-    ("School",   "Georgia Tech, Math & Computing"),
-    ("Research", "ML @ MIT, Collective Intelligence"),
+    ("School",   "Georgia Tech, Math & Computing '29"),
+    ("Research", "MIT Center for Collective Intelligence"),
     ("Work",     "Growth & software @ Slashy (YC S25)"),
-    ("Lab",      "Technologist in Residence, Philly AI Lab"),
-    ("Also",     "Health econ RA @ Wharton"),
+    ("Before",   "AI Engineer, Philly AI Lab residency"),
     (None, None),
     ("Building", "transformers, autodiff, order books"),
-    ("Stack",    "Python, NumPy, C++, TypeScript, GAMS"),
-    ("Contact",  "kushbehl06@gmail.com"),
+    ("Stack",    "Python, NumPy, Next.js, R, GAMS, C++"),
+    ("Contact",  "kushagra@gatech.edu"),
 ]
 
 KEY_W = max(len(k) for k, _ in ROWS if k)
