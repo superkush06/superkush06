@@ -3,6 +3,18 @@
   <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy, Georgia Tech" src="panel-light.svg" width="774">
 </picture>
 
+### Machine learning
+
+|  |  |
+| :-- | :-- |
+| [**transformer-from-scratch**](https://github.com/superkush06/transformer-from-scratch) | GPT-style decoder in pure NumPy. Backprop by hand, gradients checked against finite differences |
+| [**tinydiff**](https://github.com/superkush06/tinydiff) | Reverse-mode autodiff engine in under 500 lines |
+| [**gauss-bandit**](https://github.com/superkush06/gauss-bandit) | UCB1, Thompson, EXP3, LinUCB, with regret analysis |
+| [**bayes**](https://github.com/superkush06/bayes) | HMC and variational inference, checked against known posteriors |
+| [**rl-gym**](https://github.com/superkush06/rl-gym) · [**regimes**](https://github.com/superkush06/regimes) · [**mlrun**](https://github.com/superkush06/mlrun) | Q-learning to A2C · HMM regime detection · a zero-dependency experiment tracker |
+
+<img src="https://raw.githubusercontent.com/superkush06/gauss-bandit/main/docs/demo.png" width="100%" alt="cumulative regret" />
+
 ### Markets
 
 |  |  |
@@ -14,17 +26,6 @@
 | [**portopt**](https://github.com/superkush06/portopt) · [**garch**](https://github.com/superkush06/garch) · [**risk**](https://github.com/superkush06/risk) · [**kalman**](https://github.com/superkush06/kalman) | Portfolio optimization · vol models · VaR and expected shortfall · state-space filtering |
 
 <img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/demo.png" width="100%" alt="SVI implied volatility surface" />
-
-### Machine learning
-
-|  |  |
-| :-- | :-- |
-| [**gauss-bandit**](https://github.com/superkush06/gauss-bandit) | UCB1, Thompson, EXP3, LinUCB, with regret analysis |
-| [**transformer-from-scratch**](https://github.com/superkush06/transformer-from-scratch) | GPT-style decoder in pure NumPy. Backprop by hand, gradients checked against finite differences |
-| [**tinydiff**](https://github.com/superkush06/tinydiff) | Reverse-mode autodiff engine in under 500 lines |
-| [**regimes**](https://github.com/superkush06/regimes) · [**bayes**](https://github.com/superkush06/bayes) · [**rl-gym**](https://github.com/superkush06/rl-gym) · [**mlrun**](https://github.com/superkush06/mlrun) | HMM regime detection · HMC and variational inference · Q-learning to A2C · experiment tracker |
-
-<img src="https://raw.githubusercontent.com/superkush06/gauss-bandit/main/docs/demo.png" width="100%" alt="cumulative regret" />
 
 ### Betting
 
