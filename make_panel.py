@@ -27,10 +27,10 @@ N = 12            # sequence length for the attention map
 CELL, GAP = 15, 3
 
 THEMES = {
-    "dark": dict(bg="#0d1117", stroke="#30363d", key="#58a6ff", val="#c9d1d9",
+    "dark": dict(bg="#0d1117", stroke="#30363d", key="#58a6ff", val="#F0F6FC",
                  dim="#6e7681", dots="#373e47", accent="#d29922",
                  hot=(88, 166, 255), cold="#161b22", spark="#3fb950"),
-    "light": dict(bg="#ffffff", stroke="#d0d7de", key="#0969da", val="#1f2328",
+    "light": dict(bg="#f6f8fa", stroke="#d0d7de", key="#0969da", val="#1F2328",
                   dim="#8c959f", dots="#c9d1d9", accent="#9a6700",
                   hot=(9, 105, 218), cold="#f6f8fa", spark="#1a7f37"),
 }
@@ -83,8 +83,11 @@ def build(theme: str) -> str:
     t = THEMES[theme]
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
          f'viewBox="0 0 {W} {H}" font-size="{FS}" '
-         f'font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'
-         f'&quot;Liberation Mono&quot;,monospace">',
+         f'font-family="MonoFallback,ui-monospace,SFMono-Regular,Menlo,'
+         f'Consolas,monospace">'
+         '<style>@font-face{font-family:MonoFallback;'
+         'src:local("SFMono-Regular"),local("Consolas"),'
+         'local("DejaVu Sans Mono");size-adjust:105%;}</style>',
          f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="10" '
          f'fill="{t["bg"]}" stroke="{t["stroke"]}"/>']
 

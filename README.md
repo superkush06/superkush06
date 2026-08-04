@@ -1,3 +1,5 @@
+<!-- The panel above is a real causal self-attention map: scores generated,
+     future masked, softmaxed. Regenerate it with `python3 make_panel.py`. -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="attn-dark.svg">
   <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy, Georgia Tech" src="attn-light.svg" width="774">
