@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="788" height="330" viewBox="0 0 788 330" font-size="14" font-family="MonoFallback,ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<style>@font-face{font-family:MonoFallback;src:local("SFMono-Regular"),local("Consolas"),local("DejaVu Sans Mono");size-adjust:105%;}</style>
+<rect x="0.5" y="0.5" width="787" height="329" rx="10" fill="#0d1117" stroke="#30363d"/>
+<text x="26" y="40" fill="#6e7681" font-size="12">GRADIENT DESCENT</text>
+<ellipse cx="152" cy="158" rx="34.4" ry="12.6" transform="rotate(28.0 152 158)" fill="none" stroke="#a5d6ff" stroke-width="1.1" stroke-opacity="0.30"/>
+<ellipse cx="152" cy="158" rx="51.2" ry="18.7" transform="rotate(28.0 152 158)" fill="none" stroke="#79c0ff" stroke-width="1.1" stroke-opacity="0.43"/>
+<ellipse cx="152" cy="158" rx="69.8" ry="25.5" transform="rotate(28.0 152 158)" fill="none" stroke="#58a6ff" stroke-width="1.1" stroke-opacity="0.56"/>
+<ellipse cx="152" cy="158" rx="89.7" ry="32.7" transform="rotate(28.0 152 158)" fill="none" stroke="#388bfd" stroke-width="1.1" stroke-opacity="0.69"/>
+<ellipse cx="152" cy="158" rx="110.8" ry="40.5" transform="rotate(28.0 152 158)" fill="none" stroke="#1f6feb" stroke-width="1.1" stroke-opacity="0.82"/>
+<path d="M 49.6,140.0 L 96.7,100.8 L 92.1,147.4 L 119.6,124.6 L 117.0,151.7 L 133.0,138.5 L 131.5,154.3 L 140.9,146.6 L 140.0,155.8 L 145.5,151.4 L 145.0,156.7 L 148.2,154.1 L 147.9,157.2 L 149.8,155.7 L 149.6,157.5 L 150.7,156.7 L 150.6,157.7 L 151.2,157.2 L 151.2,157.8 L 151.5,157.5 L 151.5,157.9 L 151.7,157.7 L 151.7,157.9 L 151.8,157.8 L 151.8,158.0 L 151.9,157.9 L 151.9,158.0" fill="none" stroke="#f778ba" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.75"/>
+<circle cx="49.6" cy="140.0" r="2.6" fill="#f778ba" fill-opacity="0.85"/>
+<circle cx="152" cy="158" r="2.4" fill="#d29922"/>
+<circle r="4.4" fill="#ffffff" stroke="#f778ba" stroke-width="1.7"><animateMotion dur="3.4s" repeatCount="indefinite" path="M 49.6,140.0 L 96.7,100.8 L 92.1,147.4 L 119.6,124.6 L 117.0,151.7 L 133.0,138.5 L 131.5,154.3 L 140.9,146.6 L 140.0,155.8 L 145.5,151.4 L 145.0,156.7 L 148.2,154.1 L 147.9,157.2 L 149.8,155.7 L 149.6,157.5 L 150.7,156.7 L 150.6,157.7 L 151.2,157.2 L 151.2,157.8 L 151.5,157.5 L 151.5,157.9 L 151.7,157.7 L 151.7,157.9 L 151.8,157.8 L 151.8,158.0 L 151.9,157.9 L 151.9,158.0"/></circle>
+<text x="26" y="308" fill="#6e7681" font-size="11">condition number 7.5 · lr 0.235 · 26 steps</text>
+<line x1="300" y1="24" x2="300" y2="310" stroke="#30363d"/>
+<text x="330" y="40" xml:space="preserve"><tspan fill="#d29922">kush</tspan><tspan fill="#6e7681">@</tspan><tspan fill="#d29922">github</tspan></text>
+<text x="330" y="84" xml:space="preserve"><tspan fill="#58a6ff">School</tspan><tspan fill="#373e47"> .... </tspan><tspan fill="#F0F6FC">Georgia Tech, Math &amp; Computing</tspan></text>
+<text x="330" y="106" xml:space="preserve"><tspan fill="#58a6ff">Work</tspan><tspan fill="#373e47"> ...... </tspan><tspan fill="#F0F6FC">Growth engineering @ Slashy (YC S25)</tspan></text>
+<text x="330" y="128" xml:space="preserve"><tspan fill="#58a6ff">Research</tspan><tspan fill="#373e47"> .. </tspan><tspan fill="#F0F6FC">ML @ MIT, Collective Intelligence</tspan></text>
+<text x="330" y="150" xml:space="preserve"><tspan fill="#58a6ff">Before</tspan><tspan fill="#373e47"> .... </tspan><tspan fill="#F0F6FC">Wharton, DECA ICDC x2, SIG Discovery</tspan></text>
+<text x="330" y="194" xml:space="preserve"><tspan fill="#58a6ff">Building</tspan><tspan fill="#373e47"> .. </tspan><tspan fill="#F0F6FC">transformers, autodiff, order books</tspan></text>
+<text x="330" y="216" xml:space="preserve"><tspan fill="#58a6ff">Stack</tspan><tspan fill="#373e47"> ..... </tspan><tspan fill="#F0F6FC">Python, NumPy, C, TypeScript</tspan></text>
+<text x="330" y="238" xml:space="preserve"><tspan fill="#58a6ff">Contact</tspan><tspan fill="#373e47"> ... </tspan><tspan fill="#F0F6FC">kushagra@gatech.edu</tspan></text>
+</svg>

@@ -1,38 +1,42 @@
-<!-- The panel above is a real causal self-attention map: scores generated,
-     future masked, softmaxed. Regenerate it with `python3 make_panel.py`. -->
+<!-- The panel is a real gradient-descent run on an ill-conditioned quadratic:
+     the contours are true level sets, the zig-zag is what a fixed learning
+     rate actually does. Regenerate with `python3 make_panel.py`. -->
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="attn-dark.svg">
-  <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy, Georgia Tech" src="attn-light.svg" width="774">
+  <source media="(prefers-color-scheme: dark)" srcset="gd-dark.svg">
+  <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy (YC S25), Math & Computing at Georgia Tech" src="gd-light.svg" width="788">
 </picture>
 
-### Machine learning
+### Six I'd actually show you
 
-|  |  |
-| :-- | :-- |
-| [**transformer-from-scratch**](https://github.com/superkush06/transformer-from-scratch) | GPT-style decoder in pure NumPy. Backprop by hand, gradients checked against finite differences |
-| [**tinydiff**](https://github.com/superkush06/tinydiff) | Reverse-mode autodiff engine in under 500 lines |
-| [**gauss-bandit**](https://github.com/superkush06/gauss-bandit) | UCB1, Thompson, EXP3, LinUCB, with regret analysis |
-| [**bayes**](https://github.com/superkush06/bayes) | HMC and variational inference, checked against known posteriors |
-| [**rl-gym**](https://github.com/superkush06/rl-gym) · [**regimes**](https://github.com/superkush06/regimes) · [**mlrun**](https://github.com/superkush06/mlrun) | Q-learning to A2C · HMM regime detection · a zero-dependency experiment tracker |
+> **[transformer-from-scratch](https://github.com/superkush06/transformer-from-scratch)** — a GPT-style decoder in pure NumPy, backprop derived by hand.
+> All 29 parameter tensors agree with finite differences, and the causal mask is verified by ablation rather than assumed.
 
-<img src="https://raw.githubusercontent.com/superkush06/gauss-bandit/main/docs/demo.png" width="100%" alt="cumulative regret" />
+> **[tinydiff](https://github.com/superkush06/tinydiff)** — reverse-mode autodiff in under 500 lines.
+> Batched and broadcast matmul adjoints, correct double-`backward()` semantics, and a 3000-op graph that doesn't blow the stack.
 
-### Markets
+> **[gauss-bandit](https://github.com/superkush06/gauss-bandit)** — UCB1, Thompson, EXP3, LinUCB.
+> Measured regret is checked against the bound each paper actually proves, including the Lai-Robbins lower bound computed exactly rather than sketched.
 
-|  |  |
-| :-- | :-- |
-| [**lobster**](https://github.com/superkush06/lobster) | Limit order book simulator. Price-time priority, latency and impact models, replays real NASDAQ data |
-| [**vol-surface**](https://github.com/superkush06/vol-surface) | Black-Scholes, SABR, and SVI calibration that stays arbitrage-free |
-| [**factor-zoo**](https://github.com/superkush06/factor-zoo) | Momentum, value, quality, low-vol. Fama-MacBeth regressions and IC tearsheets |
-| [**optune**](https://github.com/superkush06/optune) | Options pricing and Greeks by adjoint autodiff, plus barrier Monte Carlo |
-| [**portopt**](https://github.com/superkush06/portopt) · [**garch**](https://github.com/superkush06/garch) · [**risk**](https://github.com/superkush06/risk) · [**kalman**](https://github.com/superkush06/kalman) | Portfolio optimization · vol models · VaR and expected shortfall · state-space filtering |
+> **[lobster](https://github.com/superkush06/lobster)** — a limit order book that matches the way an exchange does.
+> Price-time priority, self-trade prevention, and NASDAQ LOBSTER replay that reports when reconstruction drifts instead of silently dropping messages.
 
-<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/demo.png" width="100%" alt="SVI implied volatility surface" />
+> **[vol-surface](https://github.com/superkush06/vol-surface)** — SVI calibrated across five expiries.
+> Per-slice residuals of 10–14 bp with calendar arbitrage ruled out: total variance is non-decreasing in T at every strike.
 
-### Betting
-
-[**oddslib**](https://github.com/superkush06/oddslib) · [**dixoncoles**](https://github.com/superkush06/dixoncoles) · [**kelly-bet**](https://github.com/superkush06/kelly-bet) · [**arbfinder**](https://github.com/superkush06/arbfinder)
+> **[factor-zoo](https://github.com/superkush06/factor-zoo)** — momentum, value, quality, low-vol, with Fama-MacBeth and Newey-West.
+> Look-ahead removed from the winsorizer, which was worth 0.165 z-units of leakage and most of the gap between paper premia and real ones.
 
 <br>
 
-<sub>Everything has tests and CI. Built with Claude Code. · [LinkedIn](https://www.linkedin.com/in/kushagra-behl/)</sub>
+<img src="https://raw.githubusercontent.com/superkush06/gauss-bandit/main/docs/demo.png" width="100%" alt="cumulative regret: Thompson flattens out, EXP3 keeps paying" />
+
+<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/demo.png" width="100%" alt="calibrated SVI implied volatility surface" />
+
+<br>
+
+Every one has tests, CI, and a validation doc checking its numbers against published results or closed-form answers — including the rows where they disagree. Built with Claude Code.
+
+<sub>Also around: [optune](https://github.com/superkush06/optune) · [portopt](https://github.com/superkush06/portopt) · [garch](https://github.com/superkush06/garch) · [risk](https://github.com/superkush06/risk) · [kalman](https://github.com/superkush06/kalman) · [regimes](https://github.com/superkush06/regimes) · [bayes](https://github.com/superkush06/bayes) · [rl-gym](https://github.com/superkush06/rl-gym) · [mlrun](https://github.com/superkush06/mlrun) · and a betting stack: [oddslib](https://github.com/superkush06/oddslib) · [dixoncoles](https://github.com/superkush06/dixoncoles) · [kelly-bet](https://github.com/superkush06/kelly-bet) · [arbfinder](https://github.com/superkush06/arbfinder)</sub>
+
+<sub>[LinkedIn](https://www.linkedin.com/in/kushagra-behl/) · kushagra@gatech.edu</sub>
