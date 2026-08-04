@@ -1,9 +1,10 @@
 ## Kushagra Behl
 
-Math &amp; Computing at Georgia Tech. I build quant and ML libraries — order books, vol surfaces, autodiff engines — mostly because I wanted to know how they actually worked.
+I do growth at a startup (Slashy, YC S25) and ML research at MIT. Math &amp; Computing at Georgia Tech.
 
-**Now:** ML research at MIT's Center for Collective Intelligence · growth engineering at Slashy (YC S25)
-**Before:** health econ research at Wharton · DECA ICDC Business Finance, 2× international qualifier · 3rd in PA, Financial Math · SIG Discovery
+ML feels like where most things are heading, and markets are fun to think about, so most of what I build ends up in one or the other.
+
+Before: health econ research at Wharton, DECA finance (2× ICDC), SIG Discovery.
 
 <img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/demo.png" width="100%" alt="SVI implied volatility surface" />
 
@@ -30,9 +31,9 @@ Math &amp; Computing at Georgia Tech. I build quant and ML libraries — order b
 
 <img src="https://raw.githubusercontent.com/superkush06/gauss-bandit/main/docs/demo.png" width="100%" alt="cumulative regret" />
 
-Everything has tests, CI, and a doc checking the numbers against published results. Built with Claude Code.
+Everything has tests and CI. Built with Claude Code.
 
-Also a betting stack: [oddslib](https://github.com/superkush06/oddslib) · [dixoncoles](https://github.com/superkush06/dixoncoles) · [kelly-bet](https://github.com/superkush06/kelly-bet) · [arbfinder](https://github.com/superkush06/arbfinder)
+There's also some betting stuff: [oddslib](https://github.com/superkush06/oddslib) · [dixoncoles](https://github.com/superkush06/dixoncoles) · [kelly-bet](https://github.com/superkush06/kelly-bet) · [arbfinder](https://github.com/superkush06/arbfinder)
 
 ---
 
