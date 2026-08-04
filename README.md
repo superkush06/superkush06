@@ -1,12 +1,7 @@
-## Kushagra Behl
-
-I do growth at a startup (Slashy, YC S25) and ML research at MIT. Math &amp; Computing at Georgia Tech.
-
-ML feels like where most things are heading, and markets are fun to think about, so most of what I build ends up in one or the other.
-
-Before: health econ research at Wharton, DECA finance (2× ICDC), SIG Discovery.
-
-<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/demo.png" width="100%" alt="SVI implied volatility surface" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="panel-dark.svg">
+  <img alt="Kushagra Behl — Georgia Tech, growth engineering at Slashy, ML research at MIT" src="panel-light.svg" width="752">
+</picture>
 
 ### Markets
 
@@ -18,7 +13,7 @@ Before: health econ research at Wharton, DECA finance (2× ICDC), SIG Discovery.
 | [**optune**](https://github.com/superkush06/optune) | Options pricing and Greeks by adjoint autodiff, plus barrier Monte Carlo |
 | [**portopt**](https://github.com/superkush06/portopt) · [**garch**](https://github.com/superkush06/garch) · [**risk**](https://github.com/superkush06/risk) · [**kalman**](https://github.com/superkush06/kalman) | Portfolio optimization · vol models · VaR and expected shortfall · state-space filtering |
 
-<img src="https://raw.githubusercontent.com/superkush06/lobster/main/docs/demo.png" width="100%" alt="order book simulation" />
+<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/demo.png" width="100%" alt="SVI implied volatility surface" />
 
 ### Machine learning
 
@@ -31,10 +26,10 @@ Before: health econ research at Wharton, DECA finance (2× ICDC), SIG Discovery.
 
 <img src="https://raw.githubusercontent.com/superkush06/gauss-bandit/main/docs/demo.png" width="100%" alt="cumulative regret" />
 
-Everything has tests and CI. Built with Claude Code.
+### Betting
 
-There's also some betting stuff: [oddslib](https://github.com/superkush06/oddslib) · [dixoncoles](https://github.com/superkush06/dixoncoles) · [kelly-bet](https://github.com/superkush06/kelly-bet) · [arbfinder](https://github.com/superkush06/arbfinder)
+[**oddslib**](https://github.com/superkush06/oddslib) · [**dixoncoles**](https://github.com/superkush06/dixoncoles) · [**kelly-bet**](https://github.com/superkush06/kelly-bet) · [**arbfinder**](https://github.com/superkush06/arbfinder)
 
----
+<br>
 
-[LinkedIn](https://www.linkedin.com/in/kushagra-behl/) · [kushagra@gatech.edu](mailto:kushagra@gatech.edu)
+<sub>Everything has tests and CI. Built with Claude Code. · [LinkedIn](https://www.linkedin.com/in/kushagra-behl/)</sub>
