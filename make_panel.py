@@ -151,6 +151,6 @@ def build(theme: str) -> str:
 if __name__ == "__main__":
     here = pathlib.Path(__file__).parent
     for name in THEMES:
-        p = here / f"panel-{name}.svg"
+        p = here / f"attn-{name}.svg"
         p.write_text(build(name))
         print(f"wrote {p.name}  {W}x{H}")

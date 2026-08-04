@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="panel-dark.svg">
-  <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy, Georgia Tech" src="panel-light.svg" width="774">
+  <source media="(prefers-color-scheme: dark)" srcset="attn-dark.svg">
+  <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy, Georgia Tech" src="attn-light.svg" width="774">
 </picture>
 
 ### Machine learning
