@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="788" height="330" viewBox="0 0 788 330" font-size="14" font-family="MonoFallback,ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+<svg xmlns="http://www.w3.org/2000/svg" width="824" height="330" viewBox="0 0 824 330" font-size="14" font-family="MonoFallback,ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
 <style>@font-face{font-family:MonoFallback;src:local("SFMono-Regular"),local("Consolas"),local("DejaVu Sans Mono");size-adjust:105%;}</style>
-<rect x="0.5" y="0.5" width="787" height="329" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="0.5" y="0.5" width="823" height="329" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="26" y="40" fill="#8c959f" font-size="12">GRADIENT DESCENT</text>
 <ellipse cx="152" cy="158" rx="34.4" ry="12.6" transform="rotate(28.0 152 158)" fill="none" stroke="#54aeff" stroke-width="1.1" stroke-opacity="0.30"/>
 <ellipse cx="152" cy="158" rx="51.2" ry="18.7" transform="rotate(28.0 152 158)" fill="none" stroke="#218bff" stroke-width="1.1" stroke-opacity="0.43"/>
@@ -15,10 +15,11 @@
 <line x1="300" y1="24" x2="300" y2="310" stroke="#d0d7de"/>
 <text x="330" y="40" xml:space="preserve"><tspan fill="#9a6700">kush</tspan><tspan fill="#8c959f">@</tspan><tspan fill="#9a6700">github</tspan></text>
 <text x="330" y="84" xml:space="preserve"><tspan fill="#0969da">School</tspan><tspan fill="#c9d1d9"> .... </tspan><tspan fill="#1F2328">Georgia Tech, Math &amp; Computing</tspan></text>
-<text x="330" y="106" xml:space="preserve"><tspan fill="#0969da">Work</tspan><tspan fill="#c9d1d9"> ...... </tspan><tspan fill="#1F2328">Growth engineering @ Slashy (YC S25)</tspan></text>
-<text x="330" y="128" xml:space="preserve"><tspan fill="#0969da">Research</tspan><tspan fill="#c9d1d9"> .. </tspan><tspan fill="#1F2328">ML @ MIT, Collective Intelligence</tspan></text>
-<text x="330" y="150" xml:space="preserve"><tspan fill="#0969da">Before</tspan><tspan fill="#c9d1d9"> .... </tspan><tspan fill="#1F2328">Wharton, DECA ICDC x2, SIG Discovery</tspan></text>
-<text x="330" y="194" xml:space="preserve"><tspan fill="#0969da">Building</tspan><tspan fill="#c9d1d9"> .. </tspan><tspan fill="#1F2328">transformers, autodiff, order books</tspan></text>
-<text x="330" y="216" xml:space="preserve"><tspan fill="#0969da">Stack</tspan><tspan fill="#c9d1d9"> ..... </tspan><tspan fill="#1F2328">Python, NumPy, C, TypeScript</tspan></text>
-<text x="330" y="238" xml:space="preserve"><tspan fill="#0969da">Contact</tspan><tspan fill="#c9d1d9"> ... </tspan><tspan fill="#1F2328">kushagra@gatech.edu</tspan></text>
+<text x="330" y="106" xml:space="preserve"><tspan fill="#0969da">Research</tspan><tspan fill="#c9d1d9"> .. </tspan><tspan fill="#1F2328">ML @ MIT, Collective Intelligence</tspan></text>
+<text x="330" y="128" xml:space="preserve"><tspan fill="#0969da">Work</tspan><tspan fill="#c9d1d9"> ...... </tspan><tspan fill="#1F2328">Growth &amp; software @ Slashy (YC S25)</tspan></text>
+<text x="330" y="150" xml:space="preserve"><tspan fill="#0969da">Lab</tspan><tspan fill="#c9d1d9"> ....... </tspan><tspan fill="#1F2328">Technologist in Residence, Philly AI Lab</tspan></text>
+<text x="330" y="172" xml:space="preserve"><tspan fill="#0969da">Also</tspan><tspan fill="#c9d1d9"> ...... </tspan><tspan fill="#1F2328">Health econ RA @ Wharton</tspan></text>
+<text x="330" y="216" xml:space="preserve"><tspan fill="#0969da">Building</tspan><tspan fill="#c9d1d9"> .. </tspan><tspan fill="#1F2328">transformers, autodiff, order books</tspan></text>
+<text x="330" y="238" xml:space="preserve"><tspan fill="#0969da">Stack</tspan><tspan fill="#c9d1d9"> ..... </tspan><tspan fill="#1F2328">Python, NumPy, C++, TypeScript, GAMS</tspan></text>
+<text x="330" y="260" xml:space="preserve"><tspan fill="#0969da">Contact</tspan><tspan fill="#c9d1d9"> ... </tspan><tspan fill="#1F2328">kushbehl06@gmail.com</tspan></text>
 </svg>

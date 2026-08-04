@@ -4,25 +4,39 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="gd-dark.svg">
-  <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy (YC S25), Math & Computing at Georgia Tech" src="gd-light.svg" width="788">
+  <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy (YC S25), Math & Computing at Georgia Tech" src="gd-light.svg" width="824">
 </picture>
 
-Math &amp; Computing student at **Georgia Tech**, working on machine learning and markets. ML researcher at **MIT's Center for Collective Intelligence**, growth engineer at **Slashy** (YC S25), previously health-economics research at **Wharton**. Two-time DECA ICDC international qualifier in Business Finance and 3rd in Pennsylvania in Financial Math.
+Math &amp; Computing at **Georgia Tech**. ML, startups, and finance — mostly LLM systems that have to work on real traffic, and quant libraries where the math has to check out against the paper.
+
+**LLM pipelines and agentic workflows** · **RAG over vector databases** · **prompt and eval iteration in production** · **Next.js full-stack** · **ML from scratch in NumPy** — autodiff, transformers, backprop by hand · **quant methods** — SVI calibration, Fama-MacBeth, bandit regret analysis · **econometrics** in R, MATLAB, and GAMS
 
 ## Experience
 
-**ML Researcher — MIT, Center for Collective Intelligence**
-LLM-based argument mining: building systems that extract and structure claims and their supporting reasons out of unstructured human discussion.
+**Machine Learning Research Assistant — MIT, Center for Collective Intelligence** · Jun 2026 –
+LLM-based argument mining: pulling claims and their supporting reasons out of unstructured discussion and giving them structure.
 
-**Growth Engineer — Slashy** · `YC S25`
-LLM optimization and agentic workflows on a production product, plus the web surface around them. Prompt and eval iteration on real traffic rather than benchmarks.
+**Technologist in Residence — Trifecta Enterprises, Philly AI Lab** · May 2026 –
+Built a RAG pipeline that embeds LinkedIn posts, newsletters, and articles into a vector database so the whole content library is queryable in natural language. Streams Claude API responses to surface topic gaps, engagement patterns, and next-post recommendations.
 
-**Research — Wharton**
-Health economics. Statistical analysis on clinical and policy datasets.
+**Growth &amp; Software Engineer — Slashy** `YC S25` · May 2026 –
+Shipped [slashy.com/blog](https://slashy.com/blog) — a full-stack Next.js app where agentic AI drafts and publishes content autonomously. Wired LLM pipelines into social and email outreach so distribution runs at scale. Also LLM optimization and social growth.
 
-## Projects
+**Research Assistant — The Wharton School** · May 2026 –
+Health economics: OECD healthcare spending and policy interventions. Collection, analysis, and visualization in R, MATLAB, and NumPy.
 
-Nineteen libraries, all with tests, CI, and a validation doc that checks their numbers against published results or closed-form answers. The six worth your time:
+**Growth &amp; Operations — Knowunity** · Mar – May 2026
+Ran content growth with 11 UGC creators to **1.3M+ organic views** in the US market. Knowunity is Europe's #1 AI learning app — 20M+ users, ~$50M raised.
+
+**Market Research — dSilo.ai** · Jul – Sep 2025
+Competitive analysis across finance and compliance agentic AI; fed positioning and UVP work.
+
+**Independent research** · Apr 2024 –
+Modeled minimum-wage shocks on GDP and CPI across 10 states with a graduate-level CGE model in GAMS, reviewed with economists at Villanova.
+
+## Libraries
+
+Nineteen of them, each with tests, CI, and a validation doc that checks its numbers against published results or closed-form answers. Six worth your time:
 
 **[transformer-from-scratch](https://github.com/superkush06/transformer-from-scratch)** — GPT-style decoder in pure NumPy
 Backprop derived by hand. All 29 parameter tensors agree with finite differences; the causal mask is verified by ablation rather than assumed.
@@ -37,7 +51,7 @@ Measured regret checked against the bound each paper actually proves, including 
 Price-time priority, self-trade prevention, latency and market-impact models, and NASDAQ LOBSTER replay that reports when reconstruction drifts instead of silently dropping messages.
 
 **[vol-surface](https://github.com/superkush06/vol-surface)** — implied volatility surfaces
-SVI calibrated across five expiries at 10–14 bp per-slice residuals, with calendar arbitrage ruled out: total variance is non-decreasing in T at every strike.
+SVI calibrated across five expiries at 10–14 bp per-slice residuals, calendar arbitrage ruled out: total variance is non-decreasing in T at every strike.
 
 **[factor-zoo](https://github.com/superkush06/factor-zoo)** — equity factor reproductions
 Momentum, value, quality, low-vol with Fama-MacBeth and Newey-West. Look-ahead removed from the winsorizer, worth 0.165 z-units of leakage.
@@ -46,7 +60,7 @@ Momentum, value, quality, low-vol with Fama-MacBeth and Newey-West. Look-ahead r
 
 ## What "validated" means here
 
-Each library ships a `docs/validation.md` that runs its own numbers and compares them to an outside source, and the verdicts are derived from the measurements — break the library and the table goes red.
+Each library ships a `docs/validation.md` that runs its own numbers against an outside source, with verdicts derived from the measurements — break the library and the table goes red.
 
 | Library | Checked against | Result |
 | :-- | :-- | :-- |
@@ -69,6 +83,6 @@ A quant sports-betting stack: [oddslib](https://github.com/superkush06/oddslib) 
 
 <br>
 
-Open to ML research and quant internships. Built with Claude Code.
+<sub>Outside the code: Director of Fundraising at Plover International — 130,000+ hygiene products donated and $21,200+ raised, with UPenn and YMCA partnerships. Top 70 international at DECA ICDC (2× qualifier), 3rd in Pennsylvania in Financial Math.</sub>
 
 <sub>[LinkedIn](https://www.linkedin.com/in/kushagra-behl/) · kushagra@gatech.edu</sub>
