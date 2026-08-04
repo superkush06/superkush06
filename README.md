@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="panel-dark.svg">
-  <img alt="Kushagra Behl — Georgia Tech, growth engineering at Slashy, ML research at MIT" src="panel-light.svg" width="752">
+  <img alt="Kushagra Behl — ML research at MIT, growth engineering at Slashy, Georgia Tech" src="panel-light.svg" width="774">
 </picture>
 
 ### Markets
