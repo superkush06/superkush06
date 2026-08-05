@@ -31,7 +31,9 @@ Fit it carelessly and the claim quietly becomes incoherent: negative probability
 **[factor-zoo](https://github.com/superkush06/factor-zoo)** — run on a universe that knows the answer
 A backtest that agrees with you is worth nothing until you can tell whether it agrees because the signal is real or because the code leaked. So it **writes known premia into a synthetic panel** and demands the pipeline read them back — and read back *nothing* when they're switched off.
 
-<img src="https://raw.githubusercontent.com/superkush06/gauss-bandit/main/docs/demo.png" width="100%" alt="cumulative regret: Thompson flattens out, EXP3 keeps paying for an adversary that was never there" />
+<img src="https://raw.githubusercontent.com/superkush06/lobster/main/docs/book_depth.png" width="100%" alt="every resting order at every price level over 1,400 ticks, coloured by queue depth" />
+
+<sub>Every resting order, every level, every tick of a <a href="https://github.com/superkush06/lobster">lobster</a> run — colour is queue depth on a log scale, with the best bid and ask threaded through it.</sub>
 
 ## Every number is checked against something outside itself
 
@@ -48,7 +50,9 @@ Each library ships a `docs/validation.md` that runs its own numbers against a pu
 
 Where a library disagrees with its reference, the doc says so instead of widening the tolerance.
 
-<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/demo.png" width="100%" alt="calibrated SVI implied volatility surface, five expiries" />
+<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/hero.png" width="100%" alt="a quoted smile that implies negative probability, and the nearest arbitrage-free one" />
+
+<sub>A quoted smile 1.83 vol points from the nearest admissible one. Middle: the Gatheral–Jacquier condition it breaks. Right: the consequence — negative risk-neutral density between k = 0.64 and 1.25, a butterfly that pays you to own it. From <a href="https://github.com/superkush06/vol-surface">vol-surface</a>.</sub>
 
 ## The rest
 
