@@ -7,7 +7,7 @@
   <img alt="Kushagra Behl — MIT Center for Collective Intelligence, Slashy (YC S25), Math & Computing at Georgia Tech" src="gd-light.svg" width="806">
 </picture>
 
-The work at MIT, Slashy, and the Philly AI Lab lives behind private repos. This is the part you can read: nineteen quant and ML libraries, each written to find out how the thing actually works, and each made to prove it did.
+Nineteen quant and ML libraries. Each one started as something I wanted to understand and didn't, so I wrote it out — an order book, an autodiff engine, a volatility surface — and then made it prove it was right.
 
 **LLM pipelines** — RAG, vector DBs, prompt evaluation · **ML from scratch** — autodiff, transformers, backprop by hand · **quant methods** — SVI calibration, Fama-MacBeth, regret analysis · Python · NumPy · Next.js · R · MATLAB · GAMS · C++
 
