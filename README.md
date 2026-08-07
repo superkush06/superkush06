@@ -145,13 +145,6 @@ Reach me at **kushagra@gatech.edu**.
 
 ---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/superkush06/superkush06/output/snake-dark.svg">
-  <img alt="a snake eating my contribution graph" src="https://raw.githubusercontent.com/superkush06/superkush06/output/snake.svg" width="100%">
-</picture>
-
----
-
 <details>
 <summary>The panel at the top isn't a drawing</summary>
 
