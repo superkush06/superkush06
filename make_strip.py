@@ -250,14 +250,18 @@ PAD_X, PAD_TOP = 26, 30
 DOT_W = 18
 MIN_W = 806             # the header card's width, so the two line up
 
+# dim carries the "checked against" column, which is content rather than
+# chrome, so it takes Primer's muted foreground. The subtle greys the header
+# card uses for its section labels sit at 2.9:1 on paper, under AA for text
+# this small.
 THEMES = {
     "dark": dict(bg="#0d1117", stroke="#30363d", key="#58a6ff", val="#F0F6FC",
-                 dim="#6e7681", rule="#21262d", accent="#d29922",
-                 ok="#3fb950", bad="#f85149", wait="#d29922", none="#6e7681"),
+                 dim="#8b949e", rule="#21262d", accent="#d29922",
+                 ok="#3fb950", bad="#f85149", wait="#d29922", none="#8b949e"),
     "light": dict(bg="#f6f8fa", stroke="#d0d7de", key="#0969da",
-                  val="#1F2328", dim="#8c959f", rule="#d8dee4",
+                  val="#1F2328", dim="#656d76", rule="#d8dee4",
                   accent="#9a6700", ok="#1a7f37", bad="#cf222e",
-                  wait="#9a6700", none="#8c959f"),
+                  wait="#9a6700", none="#656d76"),
 }
 
 LEGEND = [("ok", "last push passed"), ("bad", "failed"),
