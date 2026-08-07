@@ -7,106 +7,141 @@
   <img alt="Kushagra Behl, MIT Center for Collective Intelligence, Slashy (YC S25), Math & Computing at Georgia Tech" src="gd-light.svg" width="806">
 </picture>
 
-Hi. I'm into ML, startups and finance, and I learn things by building them.
-Most of what's here started as something I wanted to understand and didn't, so
-I wrote it out from scratch and then made it prove it was right.
+Hi! My main interests are ML, startups and finance, and I'm studying Math &
+Computing at Georgia Tech.
 
-## Three you can run right now
+Most of this account is numerical libraries written from scratch in Python.
+Three of them run in your browser.
 
-No install, no clone. Each page compiles the actual Python package to
-WebAssembly and runs it in your tab, so every number on it is computed while
-you read and none of it is precomputed.
+## Run them in your browser
 
-**[transformer-from-scratch](https://superkush06.github.io/transformer-from-scratch/demo/)** &nbsp;·&nbsp; audit the chain rule\
-A GPT with no autograd, so every backward pass is code I derived by hand.
-Click any of its 1,312 weights and the page measures that derivative against
-the definition of a derivative, in front of you, on tokens you type. Then
-break one of the backward passes on purpose and watch 20 of 29 gradients go
-wrong while the loss curve carries on as if nothing happened.
+No install and no clone. Each page compiles the Python package to WebAssembly
+and runs it in your tab, so the numbers are computed while you read them.
 
-**[lobster](https://superkush06.github.io/lobster/demo/)** &nbsp;·&nbsp; a stock exchange you can take apart\
-A matching engine with latency on the wire. Change who's trading and the book
-reshapes underneath you, then five experiments measure what changed: what
-queue position is worth, what a big order costs, and where the simulated tape
-stops looking like a real one.
+**[transformer-from-scratch](https://superkush06.github.io/transformer-from-scratch/demo/)** &nbsp;·&nbsp; train a GPT on your own text\
+Paste in any text and a 41,472-parameter model learns to write it, in about
+thirty seconds. Then prompt it, watch the next-character odds update as you
+type, and read what each attention head is looking at.
 
-**[vol-surface](https://superkush06.github.io/vol-surface/demo/)** &nbsp;·&nbsp; break an arbitrage-free surface\
-Drag five SVI parameters until the fitted smile implies negative probability,
-and watch the no-arbitrage screen catch it before the fit is returned.
+**[lobster](https://superkush06.github.io/lobster/demo/)** &nbsp;·&nbsp; take a stock exchange apart\
+Change who's trading and the order book reshapes underneath you. Five
+experiments then measure what changed: what queue position is worth, what a
+large order costs, and where the simulated tape stops looking real.
 
-## The six I'd actually point at
+**[vol-surface](https://superkush06.github.io/vol-surface/demo/)** &nbsp;·&nbsp; break an options pricing model\
+Drag the five parameters of a volatility smile until it implies negative
+probability, and watch the arbitrage screen catch it.
 
-**[transformer-from-scratch](https://github.com/superkush06/transformer-from-scratch)** &nbsp;·&nbsp; a GPT written the long way\
-No autograd, no tape, no `.backward()`. Every backward pass derived on paper
-and typed out as NumPy, then held to it: **1,312 hand-computed partial
-derivatives**, each checked against a central difference, worst relative error
-3.1e-07. When you read `tfs/attention.py`, you're reading the chain rule.
+## Projects
 
-**[tinydiff](https://github.com/superkush06/tinydiff)** &nbsp;·&nbsp; reverse mode, written out in full\
-Run the program once, walk the graph back once, get every partial derivative
-for about the price of the forward pass. **654 lines**, including the parts
-micrograd clones wave through: broadcasting, the whole of `np.matmul`'s shape
-space, a graph walk that survives 100,000 operations, and a `backward()` that
-would rather raise than hand back a number it can't stand behind.
+**[transformer-from-scratch](https://github.com/superkush06/transformer-from-scratch)** &nbsp;·&nbsp; a GPT in NumPy with no autograd\
+Attention, LayerNorm, GELU and cross-entropy, with every backward pass derived
+on paper and written out as explicit NumPy. Hand-derived gradients are easy to
+get subtly wrong, so most of the work is the evidence: **1,312 partial
+derivatives**, one for every scalar of every parameter, each checked two ways.
+Against numerical differentiation they agree to 3.06e-07, and against
+PyTorch's autograd to 1e-15.
 
-**[gauss-bandit](https://github.com/superkush06/gauss-bandit)** &nbsp;·&nbsp; held to the bound it's supposed to meet\
-Most bandit libraries ship UCB1 and a chart of regret going up, and the chart
-can't tell you whether the number at the end is any good. **Lai and Robbins
-settled that in 1985**: no consistent policy beats *C* ln *T*, and *C* is
-computable from the environment. This computes it, implements a policy that
-attains it, and measures everything else against the same yardstick.
+**[tinydiff](https://github.com/superkush06/tinydiff)** &nbsp;·&nbsp; reverse-mode autodiff in 654 lines\
+Run a program once, walk the graph back once, and get every partial derivative
+for about the price of the forward pass. The 654 lines mostly go on the parts
+that are easy to skip: broadcasting, the whole of `np.matmul`'s shape space,
+and an explicit-stack graph walk that survives **100,000 operations** where the
+recursive version gives up at 995.
 
-**[lobster](https://github.com/superkush06/lobster)** &nbsp;·&nbsp; a queue, and the only way to the front is to be early\
-A matching engine and agent simulator built around that sentence. Orders reach
-the book over a wire with latency, price-time priority decides who fills, and
-everything reported is measured off the tape those races produce.
-**About 2,130 lines, no dependencies**, and more than that again in tests.
+**[gauss-bandit](https://github.com/superkush06/gauss-bandit)** &nbsp;·&nbsp; bandit algorithms held to their theoretical floor\
+Seven policies across three environments. Lai and Robbins proved in 1985 that
+no consistent policy can beat *C* ln *T* regret, and that *C* is computable
+from the environment, so this computes it: **C = 20.66** here. UCB1 finishes
+50,000 pulls at 552.6, above that floor of 223.6 and inside Auer's finite-time
+guarantee of 3608.7.
 
-**[vol-surface](https://github.com/superkush06/vol-surface)** &nbsp;·&nbsp; a smile is a claim about a distribution\
-Fit one carelessly and the claim quietly becomes incoherent: negative
-probability over a band of outcomes, quoted and hedged as though nothing were
-wrong. So the incoherent cases are made loud. **Every SVI fit is screened
-against the Gatheral–Jacquier butterfly condition** before it's returned, and
+**[lobster](https://github.com/superkush06/lobster)** &nbsp;·&nbsp; a limit order book you can run experiments on\
+Price-time priority matching, agents that quote and take, and a wire between
+them with latency, so orders arrive in a different order than they were sent.
+Everything reported, including queue position and adverse selection, is
+measured off the tape those races produce. **2,145 lines with no runtime
+dependencies**, against 2,911 lines of tests.
+
+**[vol-surface](https://github.com/superkush06/vol-surface)** &nbsp;·&nbsp; SVI and SABR calibration with the arbitrage screens wired in\
+Black-Scholes inversion, SABR, SVI and multi-expiry surfaces, in pure Python
+with no SciPy. A carelessly fitted smile can imply negative probability over a
+band of strikes and nothing will tell you, so **every SVI fit is screened
+against the Gatheral-Jacquier butterfly condition** before it's returned, and
 every surface for calendar monotonicity.
 
-**[factor-zoo](https://github.com/superkush06/factor-zoo)** &nbsp;·&nbsp; run on a universe that knows the answer\
-A backtest that agrees with you is worth nothing until you can tell whether it
-agrees because the signal is real or because the code leaked. So it **writes
-known premia into a synthetic panel** and demands the pipeline read them back,
-and read back *nothing* when they're switched off.
+**[factor-zoo](https://github.com/superkush06/factor-zoo)** &nbsp;·&nbsp; factor backtests on a universe with a known answer\
+Momentum, value, size, quality, low volatility and short reversal, priced with
+quintile sorts, Fama-MacBeth and rank IC. The universe is synthetic on purpose:
+it **plants premia at published magnitudes and makes the pipeline read them
+back**, then switches them off and makes it read back nothing, +0.0513 bp/day
+against a planted zero.
 
-<img src="https://raw.githubusercontent.com/superkush06/lobster/main/docs/book_depth.png" width="100%" alt="every resting order at every price level over 1,400 ticks, coloured by queue depth" />
+<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/hero.png" width="100%" alt="an SVI slice whose implied density goes negative, and the nearest arbitrage-free fit" />
 
-<sub>Every resting order, every level, every tick of a <a href="https://github.com/superkush06/lobster">lobster</a> run. Colour is queue depth on a log scale, with the best bid and ask threaded through it.</sub>
+<sub>Axel Vogt's SVI slice, the standard counterexample. Its implied density is negative for log-moneyness between 0.642 and 1.256, which is a butterfly spread that pays you to own it. The nearest admissible fit is under two vol points away. From <a href="https://github.com/superkush06/vol-surface">vol-surface</a>.</sub>
 
-## Checked against something outside itself
+## What each one is checked against
 
-Those six each ship a `docs/validation.md` that runs their own numbers against
-a published result or a closed-form answer, with the verdicts derived from the
-measurements. Breaking the library turns the table red rather than leaving a
-stale claim behind.
+Those six ship a `docs/validation.md` holding the library against a published
+result or a closed form. Every verdict is computed from the measurement, so
+breaking the library turns the row red instead of leaving a stale claim behind.
 
 | Library | Checked against | Result |
 | :-- | :-- | :-- |
-| transformer-from-scratch | central differences, every parameter tensor | 1,312 gradients, worst 3.1e-07 |
-| tinydiff | analytic derivatives and finite differences | all ops, mutation-tested |
-| gauss-bandit | Lai–Robbins (1985), Auer et al. (2002) | regret inside both bounds |
-| vol-surface | Hagan et al. (2002), Gatheral–Jacquier | butterfly and calendar clean |
-| lobster | published microstructure facts | 11 of 14 agree; the 3 that don't are written up |
+| transformer-from-scratch | central differences, then PyTorch autograd | 1,312 gradients, agreeing to 3.06e-07 and 1e-15 |
+| tinydiff | hand-derived closed forms, Giles (2008) for matmul | 66 op and shape pairs, none failed |
+| gauss-bandit | Lai-Robbins (1985), Auer et al. (2002) | UCB1 regret 552.6, inside [223.6, 3608.7] |
+| vol-surface | Hagan et al. (2002), Gatheral-Jacquier (2014) | butterfly and calendar screens clean |
+| lobster | Cont (2001), Roll (1984), Bouchaud et al. (2004) | 11 of 14 published facts reproduced |
 | factor-zoo | planted premia, and placebos with none | recovers both |
 
-Where a library disagrees with its reference, the doc says so instead of
-widening the tolerance. lobster's order-flow memory dies after about a hundred
-trades where real flow lasts thousands, and vol-surface's SABR expansion is
-393 basis points from a Monte Carlo of the SDE it approximates. Both are on
-the page rather than filed off.
+Where a library loses, the doc says so instead of widening the tolerance.
+lobster's order-flow memory is gone by trade 89 where real flow keeps its sign
+for thousands, and at high vol-of-vol the SABR expansion sits 393 basis points
+from a Monte Carlo of the equation it approximates.
 
-<img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/hero.png" width="100%" alt="a quoted smile that implies negative probability, and the nearest arbitrage-free one" />
+## Also here
 
-<sub>A quoted smile 1.83 vol points from the nearest admissible one. Middle: the Gatheral–Jacquier condition it breaks. Right: the consequence, a negative risk-neutral density between k = 0.64 and 1.25, which is a butterfly that pays you to own it. From <a href="https://github.com/superkush06/vol-surface">vol-surface</a>.</sub>
+**[kalman](https://github.com/superkush06/kalman)** &nbsp;·&nbsp; Kalman, extended, unscented and bootstrap particle filters, with
+maximum-likelihood noise fitting and no SciPy. The `alpha=1e-3` default that
+circulates in UKF sample code collapses the sigma-point spread: near the origin
+on a range-only measurement it predicts a range of about 71 where the truth is
+about 2, which zeroes the gain. This defaults to `alpha=1.0`, with a named
+regression test holding it there.
 
-## The rest
+**[optune](https://github.com/superkush06/optune)** &nbsp;·&nbsp; Black-Scholes, binomial trees, Monte Carlo with antithetic and
+control variates, and a reverse-mode AAD engine so the Greeks fall out of the
+chain rule rather than a bump. Analytical, AAD and finite differences all agree
+on delta 0.541693 and vega 39.127884.
 
-[optune](https://github.com/superkush06/optune) · [portopt](https://github.com/superkush06/portopt) · [garch](https://github.com/superkush06/garch) · [risk](https://github.com/superkush06/risk) · [kalman](https://github.com/superkush06/kalman) · [regimes](https://github.com/superkush06/regimes) · [bayes](https://github.com/superkush06/bayes) · [rl-gym](https://github.com/superkush06/rl-gym) · [mlrun](https://github.com/superkush06/mlrun)
+**[regimes](https://github.com/superkush06/regimes)** &nbsp;·&nbsp; Gaussian HMM regime detection with forward-backward, Viterbi and
+Baum-Welch, plus CUSUM and PELT change-point detection, in pure NumPy. Recovers
+a planted two-state process at 92.4% agreement with the truth.
 
 Reach me at **kushagra@gatech.edu**.
+
+---
+
+<details>
+<summary>The panel at the top isn't a drawing</summary>
+
+<br>
+
+`make_panel.py` minimises `f(u,v) = ½(u² + 7.5v²)` from `(-2.15, 0.70)` at a
+learning rate of 0.235, and plots where the iterate actually went:
+
+```python
+for _ in range(26):
+    u -= 0.235 * 1.0 * u
+    v -= 0.235 * 7.5 * v
+```
+
+The rings are the true level sets. The zig-zag is what one learning rate does
+to a problem whose curvature differs by 7.5x between directions: the step
+that's stable along the steep axis is far too small along the shallow one, so
+it crosses the valley over and over while barely advancing down it. That gap
+is the condition number, and it's most of the reason adaptive and second-order
+methods exist.
+
+</details>
