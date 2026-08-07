@@ -4,7 +4,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="gd-dark.svg">
-  <img alt="Kushagra Behl, MIT Center for Collective Intelligence, Slashy (YC S25), Math & Computing at Georgia Tech" src="gd-light.svg" width="806">
+  <img alt="Kushagra Behl, MIT Center for Collective Intelligence, Slashy (YC S25), Math and Computing at Georgia Tech" src="gd-light.svg" width="806">
 </picture>
 
 Hi! My main interests are ML, startups and finance, and I'm studying Math &
@@ -13,15 +13,22 @@ Computing at Georgia Tech.
 Most of this account is numerical libraries written from scratch in Python.
 Three of them run in your browser.
 
-## Run them in your browser
+## &#9654;&nbsp; [Train your own GPT, in your browser](https://superkush06.github.io/transformer-from-scratch/demo/)
 
-No install and no clone. Each page compiles the Python package to WebAssembly
-and runs it in your tab, so the numbers are computed while you read them.
+Paste in any text. A 41,472-parameter transformer learns to write it in about
+thirty seconds, on your machine, with nothing installed. Then prompt it and
+watch the next-character odds shift as you type, read what each attention head
+is looking at, and check every one of the gradients that trained it.
 
-**[transformer-from-scratch](https://superkush06.github.io/transformer-from-scratch/demo/)** &nbsp;·&nbsp; train a GPT on your own text\
-Paste in any text and a 41,472-parameter model learns to write it, in about
-thirty seconds. Then prompt it, watch the next-character odds update as you
-type, and read what each attention head is looking at.
+I wrote the whole thing in NumPy with no autograd, so the backward pass is
+code you can read rather than a tape you can't. The page is
+[transformer-from-scratch](https://github.com/superkush06/transformer-from-scratch),
+compiled to WebAssembly and running in the tab.
+
+## Two more you can run
+
+Same idea. Each page compiles the Python package to WebAssembly and runs it in
+your tab, so the numbers are computed while you read them.
 
 **[lobster](https://superkush06.github.io/lobster/demo/)** &nbsp;·&nbsp; take a stock exchange apart\
 Change who's trading and the order book reshapes underneath you. Five

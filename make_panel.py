@@ -45,7 +45,7 @@ THEMES = {
 }
 
 ROWS = [
-    ("School",   "Georgia Tech, Math & Computing '29"),
+    ("School",   "Georgia Tech, Math & Computing"),
     ("Research", "MIT Center for Collective Intelligence"),
     ("Work",     "Growth & software @ Slashy (YC S25)"),
     ("Before",   "AI Engineer, Philly AI Lab residency"),
