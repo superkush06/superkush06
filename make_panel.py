@@ -50,8 +50,8 @@ ROWS = [
     ("Work",     "Growth & software @ Slashy (YC S25)"),
     ("Before",   "AI Engineer, Philly AI Lab residency"),
     (None, None),
-    ("Building", "transformers, autodiff, order books"),
-    ("Stack",    "Python, NumPy, Next.js, R, GAMS, C++"),
+    ("Building", "libraries you can run in your browser"),
+    ("Stack",    "Python, NumPy, Next.js, React, C++"),
     ("Contact",  "kushagra@gatech.edu"),
 ]
 
