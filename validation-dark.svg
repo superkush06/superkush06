@@ -9,7 +9,7 @@
 <line x1="26" y1="56" x2="780" y2="56" stroke="#21262d"/>
 <circle cx="30.0" cy="68.0" r="3.4" fill="#3fb950"/>
 <text x="44.0" y="72" fill="#3fb950">transformer-from-scratch</text>
-<text x="245.0" y="72" fill="#6e7681">central differences, then PyTorch</text>
+<text x="245.0" y="72" fill="#6e7681">central differences, Press et al.</text>
 <text x="529.5" y="72" fill="#F0F6FC">1,312 scalars, worst 3.06e-07</text>
 <circle cx="30.0" cy="94.0" r="3.4" fill="#3fb950"/>
 <text x="44.0" y="98" fill="#3fb950">tinydiff</text>

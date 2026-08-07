@@ -125,7 +125,7 @@ def m_factor(doc: str) -> str:
 
 LIBS = [
     ("transformer-from-scratch", "docs/validation.md",
-     "central differences, then PyTorch", m_transformer),
+     "central differences, Press et al.", m_transformer),
     ("tinydiff", "docs/validation.md",
      "closed forms, Giles (2008) matmul", m_tinydiff),
     ("gauss-bandit", "docs/validation.md",

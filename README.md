@@ -48,9 +48,9 @@ probability, and watch the arbitrage screen catch it.
 Attention, LayerNorm, GELU and cross-entropy, with every backward pass derived
 on paper and written out as explicit NumPy. Hand-derived gradients are easy to
 get subtly wrong, so most of the work is the evidence: **1,312 partial
-derivatives**, one for every scalar of every parameter, each checked two ways.
-Against numerical differentiation they agree to 3.06e-07, and against
-PyTorch's autograd to 1e-15.
+derivatives**, one for every scalar of every parameter, each measured against a
+central difference. All 1,312 signs agree and the worst relative error is
+3.06e-07, against a float64 floor near 4e-11.
 
 <img src="https://raw.githubusercontent.com/superkush06/transformer-from-scratch/main/docs/gradcheck.png" width="100%" alt="1,312 hand-computed gradients plotted against the central differences that measure them" />
 
@@ -122,7 +122,7 @@ breaking the library turns the row red instead of leaving a stale claim behind.
 
 | Library | Checked against | Result |
 | :-- | :-- | :-- |
-| transformer-from-scratch | central differences, then PyTorch autograd | 1,312 gradients, agreeing to 3.06e-07 and 1e-15 |
+| transformer-from-scratch | central differences, Press et al. (*Numerical Recipes* §5.7) | 1,312 gradients, worst relative error 3.06e-07 |
 | tinydiff | hand-derived closed forms, Giles (2008) for matmul | 66 op and shape pairs, none failed |
 | gauss-bandit | Lai-Robbins (1985), Auer et al. (2002) | UCB1 regret 552.6, inside [223.6, 3608.7] |
 | vol-surface | Hagan et al. (2002), Gatheral-Jacquier (2014) | butterfly and calendar screens clean |
