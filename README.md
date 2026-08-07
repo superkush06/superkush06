@@ -109,6 +109,17 @@ Those six ship a `docs/validation.md` holding the library against a published
 result or a closed form. Every verdict is computed from the measurement, so
 breaking the library turns the row red instead of leaving a stale claim behind.
 
+<!-- Not typed. `make_strip.py` reads each repo's latest CI conclusion from the
+     GitHub API and lifts each number straight out of that repo's committed
+     docs/validation.md, and a pattern that stops matching renders as
+     "unavailable" rather than falling back to whatever was here before. A
+     daily workflow rebuilds it. -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="validation-dark.svg">
+  <img alt="Validation strip: CI status and the latest measured number for transformer-from-scratch, tinydiff, gauss-bandit, lobster, vol-surface and factor-zoo" src="validation-light.svg" width="806">
+</picture>
+
 | Library | Checked against | Result |
 | :-- | :-- | :-- |
 | transformer-from-scratch | central differences, then PyTorch autograd | 1,312 gradients, agreeing to 3.06e-07 and 1e-15 |

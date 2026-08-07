@@ -1,0 +1,57 @@
+name: strip
+
+# Rebuilds the validation strip from the six libraries' current CI status and
+# the numbers in their committed docs/validation.md, then commits it if it
+# moved. The point is that the strip can't drift: if a library's number
+# changes and nobody touches this repo, the next run picks it up.
+#
+# The push trigger is here because GitHub disables cron on a public repo after
+# 60 days with no activity, and a profile README can sit untouched for longer
+# than that. Pushes made with GITHUB_TOKEN don't start another run, so the
+# commit this makes can't loop back into itself.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: strip
+  cancel-in-progress: false
+
+jobs:
+  strip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the strip
+        env:
+          # GITHUB_TOKEN is scoped to this repo, so the Actions API of the six
+          # libraries may reject it; make_strip.py retries those anonymously.
+          # If shared-runner rate limits start biting, put a read-only PAT in
+          # a STRIP_TOKEN secret and it gets used instead.
+          GITHUB_TOKEN: ${{ secrets.STRIP_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python3 make_strip.py
+
+      - name: Commit it if it moved
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- validation-light.svg validation-dark.svg; then
+            echo "strip is unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add validation-light.svg validation-dark.svg
+          git commit -m "Refresh the validation strip"
+          git push
