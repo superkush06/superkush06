@@ -42,6 +42,10 @@ derivatives**, one for every scalar of every parameter, each checked two ways.
 Against numerical differentiation they agree to 3.06e-07, and against
 PyTorch's autograd to 1e-15.
 
+<img src="https://raw.githubusercontent.com/superkush06/transformer-from-scratch/main/docs/gradcheck.png" width="100%" alt="1,312 hand-computed gradients plotted against the central differences that measure them" />
+
+<sub>All 1,312 of them, plotted against the central difference that measures each one. Five decades, every point on the diagonal. The right panel is why the step size is 1e-5: truncation error falls as the step shrinks, floating-point cancellation grows, and the sum is a V. From <a href="https://github.com/superkush06/transformer-from-scratch">transformer-from-scratch</a>.</sub>
+
 **[tinydiff](https://github.com/superkush06/tinydiff)** &nbsp;·&nbsp; reverse-mode autodiff in 654 lines\
 Run a program once, walk the graph back once, and get every partial derivative
 for about the price of the forward pass. The 654 lines mostly go on the parts
@@ -63,6 +67,10 @@ Everything reported, including queue position and adverse selection, is
 measured off the tape those races produce. **2,145 lines with no runtime
 dependencies**, against 2,911 lines of tests.
 
+<img src="https://raw.githubusercontent.com/superkush06/lobster/main/docs/book_depth.png" width="100%" alt="every resting order at every price level over 1,400 ticks, coloured by queue depth" />
+
+<sub>Every resting order at every price, over 1,400 ticks. Colour is the size waiting in each queue, the two lines are the best bid and ask, and the triangles are prints. Price sits inside a corridor of depth until something eats through a level. From <a href="https://github.com/superkush06/lobster">lobster</a>.</sub>
+
 **[vol-surface](https://github.com/superkush06/vol-surface)** &nbsp;·&nbsp; SVI and SABR calibration with the arbitrage screens wired in\
 Black-Scholes inversion, SABR, SVI and multi-expiry surfaces, in pure Python
 with no SciPy. A carelessly fitted smile can imply negative probability over a
@@ -76,6 +84,10 @@ quintile sorts, Fama-MacBeth and rank IC. The universe is synthetic on purpose:
 it **plants premia at published magnitudes and makes the pipeline read them
 back**, then switches them off and makes it read back nothing, +0.0513 bp/day
 against a planted zero.
+
+<img src="https://raw.githubusercontent.com/superkush06/factor-zoo/main/docs/recovery.png" width="100%" alt="planted factor premia recovered by the pipeline, and placebos returning nothing" />
+
+<sub>Left: mean forward return by quintile, annualised, monotone from Q1 to Q5 for every characteristic. Middle: the same Q5 minus Q1 spread compounded on a log scale, where a straight line means a stable Sharpe rather than one lucky year. Right: the Fama-MacBeth premium in basis points. From <a href="https://github.com/superkush06/factor-zoo">factor-zoo</a>.</sub>
 
 <img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/hero.png" width="100%" alt="an SVI slice whose implied density goes negative, and the nearest arbitrage-free fit" />
 
@@ -120,6 +132,13 @@ Baum-Welch, plus CUSUM and PELT change-point detection, in pure NumPy. Recovers
 a planted two-state process at 92.4% agreement with the truth.
 
 Reach me at **kushagra@gatech.edu**.
+
+---
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/superkush06/superkush06/output/snake-dark.svg">
+  <img alt="a snake eating my contribution graph" src="https://raw.githubusercontent.com/superkush06/superkush06/output/snake.svg" width="100%">
+</picture>
 
 ---
 
