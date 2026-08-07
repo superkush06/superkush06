@@ -20,10 +20,13 @@ thirty seconds, on your machine, with nothing installed. Then prompt it and
 watch the next-character odds shift as you type, read what each attention head
 is looking at, and check every one of the gradients that trained it.
 
-I wrote the whole thing in NumPy with no autograd, so the backward pass is
-code you can read rather than a tape you can't. The page is
+Watching something go from noise to sentences in half a minute is the part I
+still find a bit unreasonable, and it's why I wanted to build one where I
+could see every moving piece. So there's no autograd in it. Every gradient
+that trains the model on that page is calculus I worked out on paper and typed
+out as NumPy, which means the code is also the explanation. It's
 [transformer-from-scratch](https://github.com/superkush06/transformer-from-scratch),
-compiled to WebAssembly and running in the tab.
+compiled to WebAssembly and running in your tab.
 
 ## Two more you can run
 
