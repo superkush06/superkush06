@@ -13,6 +13,11 @@ Computing at Georgia Tech.
 Most of this account is numerical libraries written from scratch in Python.
 Three of them run in your browser.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="tools-dark.svg">
+  <img alt="Python, NumPy, PyTorch, C, WebAssembly" src="tools-light.svg" width="460">
+</picture>
+
 ## &#9654;&nbsp; [Train your own GPT, in your browser](https://superkush06.github.io/transformer-from-scratch/demo/)
 
 Paste in any text. A 41,472-parameter transformer learns to write it in about
@@ -41,6 +46,11 @@ large order costs, and where the simulated tape stops looking real.
 **[vol-surface](https://superkush06.github.io/vol-surface/demo/)** &nbsp;·&nbsp; break an options pricing model\
 Drag the five parameters of a volatility smile until it implies negative
 probability, and watch the arbitrage screen catch it.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="rule-dark.svg">
+  <img alt="" src="rule-light.svg" width="100%">
+</picture>
 
 ## Projects
 
@@ -78,9 +88,12 @@ Everything reported, including queue position and adverse selection, is
 measured off the tape those races produce. **2,145 lines with no runtime
 dependencies**, against 2,911 lines of tests.
 
-<img src="https://raw.githubusercontent.com/superkush06/lobster/main/docs/book_depth.png" width="100%" alt="every resting order at every price level over 1,400 ticks, coloured by queue depth" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/superkush06/lobster/main/docs/book_depth_anim_dark.svg">
+  <img src="https://raw.githubusercontent.com/superkush06/lobster/main/docs/book_depth_anim.svg" width="100%" alt="every resting order at every price level over 1,400 ticks, revealed as the clock sweeps across" />
+</picture>
 
-<sub>Every resting order at every price, over 1,400 ticks. Colour is the size waiting in each queue, the two lines are the best bid and ask, and the triangles are prints. Price sits inside a corridor of depth until something eats through a level. From <a href="https://github.com/superkush06/lobster">lobster</a>.</sub>
+<sub>Every resting order at every price, over 1,400 ticks, revealed as the clock runs. Colour is the size waiting in each queue and the two dots are the best bid and ask. Price sits inside a corridor of depth until something eats through a level. From <a href="https://github.com/superkush06/lobster">lobster</a>.</sub>
 
 **[vol-surface](https://github.com/superkush06/vol-surface)** &nbsp;·&nbsp; SVI and SABR calibration with the arbitrage screens wired in\
 Black-Scholes inversion, SABR, SVI and multi-expiry surfaces, in pure Python
@@ -103,6 +116,11 @@ against a planted zero.
 <img src="https://raw.githubusercontent.com/superkush06/vol-surface/main/docs/hero.png" width="100%" alt="an SVI slice whose implied density goes negative, and the nearest arbitrage-free fit" />
 
 <sub>Axel Vogt's SVI slice, the standard counterexample. Its implied density is negative for log-moneyness between 0.642 and 1.256, which is a butterfly spread that pays you to own it. The nearest admissible fit is under two vol points away. From <a href="https://github.com/superkush06/vol-surface">vol-surface</a>.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="rule-dark.svg">
+  <img alt="" src="rule-light.svg" width="100%">
+</picture>
 
 ## What each one is checked against
 
