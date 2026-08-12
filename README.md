@@ -20,6 +20,13 @@ Three of them run in your browser.
 
 ## &#9654;&nbsp; [Train your own GPT, in your browser](https://superkush06.github.io/transformer-from-scratch/demo/)
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/superkush06/transformer-from-scratch/main/docs/learning_dark.svg">
+  <img src="https://raw.githubusercontent.com/superkush06/transformer-from-scratch/main/docs/learning_light.svg" width="100%" alt="a 41,472-parameter transformer learning to write Shakespeare, from noise at step 0 to a full line by step 420" />
+</picture>
+
+<sub>Real samples from one training run, at the steps they were taken. Step 0 is noise, and by step 420 the loss has fallen from 3.398 to 0.130 and it finishes the line. Nothing here is typed: every frame is what the model actually produced at temperature 0.4 from the prompt <code>to be</code>.</sub>
+
 Paste in any text. A 41,472-parameter transformer learns to write it in about
 thirty seconds, on your machine, with nothing installed. Then prompt it and
 watch the next-character odds shift as you type, read what each attention head
@@ -63,9 +70,12 @@ central difference, where all 1,312 signs agree and the worst relative error
 is 3.06e-07. A notebook checks them a second way, against PyTorch's autograd,
 where the two agree to 1e-15.
 
-<img src="https://raw.githubusercontent.com/superkush06/transformer-from-scratch/main/docs/gradcheck.png" width="100%" alt="1,312 hand-computed gradients plotted against the central differences that measure them" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/superkush06/transformer-from-scratch/main/docs/gradcheck_dark.svg">
+  <img src="https://raw.githubusercontent.com/superkush06/transformer-from-scratch/main/docs/gradcheck_light.svg" width="100%" alt="1,312 hand-derived gradients landing on the diagonal one parameter tensor at a time, against the central differences that measure them" />
+</picture>
 
-<sub>All 1,312 of them, plotted against the central difference that measures each one. Five decades, every point on the diagonal. The right panel is why the step size is 1e-5: truncation error falls as the step shrinks, floating-point cancellation grows, and the sum is a V. From <a href="https://github.com/superkush06/transformer-from-scratch">transformer-from-scratch</a>.</sub>
+<sub>The audit as it runs. Each point is one hand-derived partial derivative against the central difference that measures it, appearing in the order the sweep visits them, a tensor at a time. The panel names the tensor currently under the differences and carries the worst relative error so far, ending at 3.06e-07 in <code>blocks.0.ffn.down.W</code>, which is 327x inside the tolerance CI enforces. From <a href="https://github.com/superkush06/transformer-from-scratch">transformer-from-scratch</a>.</sub>
 
 **[tinydiff](https://github.com/superkush06/tinydiff)** &nbsp;·&nbsp; reverse-mode autodiff in 654 lines\
 Run a program once, walk the graph back once, and get every partial derivative
