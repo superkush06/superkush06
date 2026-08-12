@@ -153,7 +153,10 @@ lobster's order-flow memory is gone by trade 89 where real flow keeps its sign
 for thousands, and at high vol-of-vol the SABR expansion sits 393 basis points
 from a Monte Carlo of the equation it approximates.
 
-## Also here
+<details>
+<summary><b>Three more that are finished</b></summary>
+
+<br>
 
 **[kalman](https://github.com/superkush06/kalman)** &nbsp;·&nbsp; Kalman, extended, unscented and bootstrap particle filters, with
 maximum-likelihood noise fitting and no SciPy. The `alpha=1e-3` default that
@@ -171,7 +174,24 @@ on delta 0.541693 and vega 39.127884.
 Baum-Welch, plus CUSUM and PELT change-point detection, in pure NumPy. Recovers
 a planted two-state process at 92.4% agreement with the truth.
 
-Reach me at **kushagra@gatech.edu**.
+</details>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="rule-dark.svg">
+  <img alt="" src="rule-light.svg" width="100%">
+</picture>
+
+## Open to
+
+Quant research, quant dev and quant trading internships for summer 2027. I'm
+at Georgia Tech doing Math and Computing, currently a research assistant at
+MIT's Center for Collective Intelligence and building at Slashy.
+
+The fastest way to judge whether I'd be useful to you is to open one of the
+three pages at the top and try to break it. Everything on this profile is
+checkable in under a minute, which is the property I was going for.
+
+**kushagra@gatech.edu** &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/kushagra-behl)
 
 ---
 
