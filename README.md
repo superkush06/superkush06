@@ -176,22 +176,7 @@ a planted two-state process at 92.4% agreement with the truth.
 
 </details>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="rule-dark.svg">
-  <img alt="" src="rule-light.svg" width="100%">
-</picture>
-
-## Open to
-
-Quant research, quant dev and quant trading internships for summer 2027. I'm
-at Georgia Tech doing Math and Computing, currently a research assistant at
-MIT's Center for Collective Intelligence and building at Slashy.
-
-The fastest way to judge whether I'd be useful to you is to open one of the
-three pages at the top and try to break it. Everything on this profile is
-checkable in under a minute, which is the property I was going for.
-
-**kushagra@gatech.edu** &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/kushagra-behl)
+Reach me at **kushagra@gatech.edu**.
 
 ---
 
