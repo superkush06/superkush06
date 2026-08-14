@@ -7,8 +7,9 @@
   <img alt="Kushagra Behl, MIT Center for Collective Intelligence, Slashy (YC S25), Math and Computing at Georgia Tech" src="gd-light.svg" width="806">
 </picture>
 
-Hi! My main interests are ML, startups and finance, and I'm studying Math &
-Computing at Georgia Tech.
+Hi! My main interests are ML, startups and finance. I'm studying Math &
+Computing at Georgia Tech, I do research at the MIT Center for Collective
+Intelligence, and I was previously at Slashy (YC S25).
 
 Most of this account is numerical libraries written from scratch in Python.
 Three of them run in your browser.
