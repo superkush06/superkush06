@@ -9,14 +9,14 @@
 
 Hi! My main interests are ML, startups and finance. I'm studying Math &
 Computing at Georgia Tech, I do research at the MIT Center for Collective
-Intelligence, and I was previously at Slashy (YC S25).
+Intelligence, and I'm a software engineering intern at Slashy (YC S25).
 
 Most of this account is numerical libraries written from scratch in Python.
 Three of them run in your browser.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="tools-dark.svg">
-  <img alt="Python, NumPy, PyTorch, C, WebAssembly" src="tools-light.svg" width="460">
+  <img alt="Python, NumPy, PyTorch, WebAssembly" src="tools-light.svg" width="460">
 </picture>
 
 ## &#9654;&nbsp; [Train your own GPT, in your browser](https://superkush06.github.io/transformer-from-scratch/demo/)
@@ -39,12 +39,12 @@ could see every moving piece. So there's no autograd in it. Every gradient
 that trains the model on that page is calculus I worked out on paper and typed
 out as NumPy, which means the code is also the explanation. It's
 [transformer-from-scratch](https://github.com/superkush06/transformer-from-scratch),
-compiled to WebAssembly and running in your tab.
+running in your tab under Pyodide (CPython compiled to WebAssembly).
 
 ## Two more you can run
 
-Same idea. Each page compiles the Python package to WebAssembly and runs it in
-your tab, so the numbers are computed while you read them.
+Same idea. Each page runs the Python package under Pyodide (CPython compiled
+to WebAssembly) in your tab, so the numbers are computed while you read them.
 
 **[lobster](https://superkush06.github.io/lobster/demo/)** &nbsp;·&nbsp; take a stock exchange apart\
 Change who's trading and the order book reshapes underneath you. Five
@@ -78,9 +78,9 @@ where the two agree to 1e-15.
 
 <sub>The audit as it runs. Each point is one hand-derived partial derivative against the central difference that measures it, appearing in the order the sweep visits them, a tensor at a time. The panel names the tensor currently under the differences and carries the worst relative error so far, ending at 3.06e-07 in <code>blocks.0.ffn.down.W</code>, which is 327x inside the tolerance CI enforces. From <a href="https://github.com/superkush06/transformer-from-scratch">transformer-from-scratch</a>.</sub>
 
-**[tinydiff](https://github.com/superkush06/tinydiff)** &nbsp;·&nbsp; reverse-mode autodiff in 654 lines\
+**[tinydiff](https://github.com/superkush06/tinydiff)** &nbsp;·&nbsp; reverse-mode autodiff in 920 lines of NumPy, 436 once comments and doctests come out\
 Run a program once, walk the graph back once, and get every partial derivative
-for about the price of the forward pass. The 654 lines mostly go on the parts
+for about the price of the forward pass. Those 436 lines of code mostly go on the parts
 that are easy to skip: broadcasting, the whole of `np.matmul`'s shape space,
 and an explicit-stack graph walk that survives **100,000 operations** where the
 recursive version gives up at 995.
@@ -96,8 +96,8 @@ guarantee of 3608.7.
 Price-time priority matching, agents that quote and take, and a wire between
 them with latency, so orders arrive in a different order than they were sent.
 Everything reported, including queue position and adverse selection, is
-measured off the tape those races produce. **2,145 lines with no runtime
-dependencies**, against 2,911 lines of tests.
+measured off the tape those races produce. **2,234 lines with no runtime
+dependencies**, against 3,294 lines of tests.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/superkush06/lobster/main/docs/book_depth_anim_dark.svg">
@@ -116,9 +116,9 @@ every surface for calendar monotonicity.
 **[factor-zoo](https://github.com/superkush06/factor-zoo)** &nbsp;·&nbsp; factor backtests on a universe with a known answer\
 Momentum, value, size, quality, low volatility and short reversal, priced with
 quintile sorts, Fama-MacBeth and rank IC. The universe is synthetic on purpose:
-it **plants premia at published magnitudes and makes the pipeline read them
-back**, then switches them off and makes it read back nothing, +0.0513 bp/day
-against a planted zero.
+it **plants premia the pipeline must read back**, deliberately larger than
+anything in CRSP so recovery is unambiguous, then switches them off and makes
+it read back nothing, +0.0513 bp/day against a planted zero.
 
 <img src="https://raw.githubusercontent.com/superkush06/factor-zoo/main/docs/recovery.png" width="100%" alt="planted factor premia recovered by the pipeline, and placebos returning nothing" />
 
@@ -163,29 +163,6 @@ Where a library loses, the doc says so instead of widening the tolerance.
 lobster's order-flow memory is gone by trade 89 where real flow keeps its sign
 for thousands, and at high vol-of-vol the SABR expansion sits 393 basis points
 from a Monte Carlo of the equation it approximates.
-
-<details>
-<summary><b>Three more that are finished</b></summary>
-
-<br>
-
-**[kalman](https://github.com/superkush06/kalman)** &nbsp;·&nbsp; Kalman, extended, unscented and bootstrap particle filters, with
-maximum-likelihood noise fitting and no SciPy. The `alpha=1e-3` default that
-circulates in UKF sample code collapses the sigma-point spread: near the origin
-on a range-only measurement it predicts a range of about 71 where the truth is
-about 2, which zeroes the gain. This defaults to `alpha=1.0`, with a named
-regression test holding it there.
-
-**[optune](https://github.com/superkush06/optune)** &nbsp;·&nbsp; Black-Scholes, binomial trees, Monte Carlo with antithetic and
-control variates, and a reverse-mode AAD engine so the Greeks fall out of the
-chain rule rather than a bump. Analytical, AAD and finite differences all agree
-on delta 0.541693 and vega 39.127884.
-
-**[regimes](https://github.com/superkush06/regimes)** &nbsp;·&nbsp; Gaussian HMM regime detection with forward-backward, Viterbi and
-Baum-Welch, plus CUSUM and PELT change-point detection, in pure NumPy. Recovers
-a planted two-state process at 92.4% agreement with the truth.
-
-</details>
 
 Reach me at **kushagra@gatech.edu**.
 

@@ -20,9 +20,10 @@ HERE = pathlib.Path(__file__).resolve().parent
 
 # The five that actually appear in the work below. NumPy and Python carry
 # almost every repo; PyTorch is the second opinion the gradients are checked
-# against; C and WebAssembly are what the browser demos compile through.
+# against; WebAssembly is what carries the browser demos (Pyodide: CPython
+# compiled to WebAssembly).
 TOOLS = [("python", "Python"), ("numpy", "NumPy"), ("pytorch", "PyTorch"),
-         ("c", "C"), ("webassembly", "WebAssembly")]
+         ("webassembly", "WebAssembly")]
 
 # Matched to the header card, so the marks read as the same object.
 THEMES = {
