@@ -19,12 +19,12 @@
 <text x="44.0" y="124" fill="#3fb950">gauss-bandit</text>
 <text x="245.0" y="124" fill="#8b949e">Lai-Robbins 1985, Auer et al. 2002</text>
 <text x="529.5" y="124" fill="#F0F6FC">UCB1 552.6 in [223.6, 3608.7]</text>
-<circle cx="30.0" cy="146.0" r="3.4" fill="#3fb950"/>
-<text x="44.0" y="150" fill="#3fb950">lobster</text>
+<circle cx="30.0" cy="146.0" r="3.4" fill="#d29922"/>
+<text x="44.0" y="150" fill="#d29922">lobster</text>
 <text x="245.0" y="150" fill="#8b949e">Cont 2001, Roll 1984, Bouchaud 2004</text>
 <text x="529.5" y="150" fill="#F0F6FC">11 of 14 published facts</text>
-<circle cx="30.0" cy="172.0" r="3.4" fill="#3fb950"/>
-<text x="44.0" y="176" fill="#3fb950">vol-surface</text>
+<circle cx="30.0" cy="172.0" r="3.4" fill="#d29922"/>
+<text x="44.0" y="176" fill="#d29922">vol-surface</text>
 <text x="245.0" y="176" fill="#8b949e">Gatheral-Jacquier 2014, Hagan 2002</text>
 <text x="529.5" y="176" fill="#F0F6FC">0/500 butterfly, cal 0.000e+00</text>
 <circle cx="30.0" cy="198.0" r="3.4" fill="#3fb950"/>
@@ -34,6 +34,8 @@
 <line x1="26" y1="216" x2="780" y2="216" stroke="#21262d"/>
 <circle cx="29.0" cy="228.0" r="3" fill="#3fb950"/>
 <text x="38.0" y="232" fill="#8b949e" font-size="10.5">last push passed</text>
+<circle cx="162.6" cy="228.0" r="3" fill="#d29922"/>
+<text x="171.6" y="232" fill="#8b949e" font-size="10.5">still running</text>
 <text x="780" y="232" fill="#8b949e" font-size="10.5" text-anchor="end">every number read out of that repo&#8217;s docs/validation.md</text>
 <text x="26" y="251" fill="#8b949e" font-size="10.5">nothing on this row is typed by hand; a pattern that stops matching reads unavailable, never a remembered value</text>
 </svg>
