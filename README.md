@@ -19,6 +19,14 @@ Three of them run in your browser.
   <img alt="Python, NumPy, PyTorch, WebAssembly" src="tools-light.svg" width="460">
 </picture>
 
+## &#9654;&nbsp; [Pollute Lake Erie, in your browser](https://superkush06.github.io/aquatic-twin/)
+
+<img src="https://raw.githubusercontent.com/superkush06/aquatic-twin/main/docs/demo.gif" width="100%" alt="a 3D model of Lake Erie where a bloom grows from river phosphorus, an oil spill hits the water, and currents reroute when the wind changes" />
+
+<sub>Recorded from the running solver and sped up. Depth is exaggerated 600x. Bloom growth is driven by river phosphorus, the slick by the currents, and the streaks by a surface flow recomputed when the wind changes.</sub>
+
+Click anywhere on the lake to spill oil, drag the wind, and watch the currents, the slick, fish habitat and fishing losses respond. It solves advection-diffusion-reaction for six fields on NOAA's real lakebed, 128 × 48 × 12 cells, in your tab, with currents from a wind-driven streamfunction that's divergence-free by construction. It's a screening model built with teammates at a 2026 Georgia Tech hackathon, where I built the solver and the AI operator, and many of its coefficients are placeholders. [Source](https://github.com/sjfan910/grokathon2026).
+
 ## &#9654;&nbsp; [Train your own GPT, in your browser](https://superkush06.github.io/transformer-from-scratch/demo/)
 
 <picture>
@@ -119,11 +127,6 @@ quintile sorts, Fama-MacBeth and rank IC. The universe is synthetic on purpose:
 it **plants premia the pipeline must read back**, deliberately larger than
 anything in CRSP so recovery is unambiguous, then switches them off and makes
 it read back nothing, +0.0513 bp/day against a planted zero.
-
-**[Aquatic Twin](https://github.com/sjfan910/grokathon2026)** &nbsp;·&nbsp; a live 3D model of Lake Erie &nbsp;·&nbsp; [run it](https://superkush06.github.io/aquatic-twin/)\
-The other projects here are libraries. This is a team build from a 2026 Georgia Tech hackathon, where I built the solver and the AI operator.
-It solves advection-diffusion-reaction for six fields on NOAA's real lakebed, **128 × 48 × 12 cells in the browser**, about 1.5 seconds per simulated month. Currents come from a wind-driven streamfunction with fluxes taken as differences across cell corners, so depth-integrated flow is divergence-free by construction. Vertical transport is implicit, because the shallow layers are under a metre thick. An AI tests cleanup plans on copies of the solver.
-Six tests hold it against a Gaussian's analytic spread and mass conservation. It's a screening model: many coefficients are placeholders and it isn't calibrated against lake observations.
 
 <img src="https://raw.githubusercontent.com/superkush06/factor-zoo/main/docs/recovery.png" width="100%" alt="planted factor premia recovered by the pipeline, and placebos returning nothing" />
 
