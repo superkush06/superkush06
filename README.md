@@ -120,6 +120,11 @@ it **plants premia the pipeline must read back**, deliberately larger than
 anything in CRSP so recovery is unambiguous, then switches them off and makes
 it read back nothing, +0.0513 bp/day against a planted zero.
 
+**[Aquatic Twin](https://github.com/sjfan910/grokathon2026)** &nbsp;·&nbsp; a live 3D model of Lake Erie &nbsp;·&nbsp; [run it](https://superkush06.github.io/aquatic-twin/)\
+The other projects here are libraries. This is a team build from a 2026 Georgia Tech hackathon, where I built the solver and the AI operator.
+It solves advection-diffusion-reaction for six fields on NOAA's real lakebed, **128 × 48 × 12 cells in the browser**, about 1.5 seconds per simulated month. Currents come from a wind-driven streamfunction with fluxes taken as differences across cell corners, so depth-integrated flow is divergence-free by construction. Vertical transport is implicit, because the shallow layers are under a metre thick. An AI tests cleanup plans on copies of the solver.
+Six tests hold it against a Gaussian's analytic spread and mass conservation. It's a screening model: many coefficients are placeholders and it isn't calibrated against lake observations.
+
 <img src="https://raw.githubusercontent.com/superkush06/factor-zoo/main/docs/recovery.png" width="100%" alt="planted factor premia recovered by the pipeline, and placebos returning nothing" />
 
 <sub>Left: mean forward return by quintile, annualised, monotone from Q1 to Q5 for every characteristic. Middle: the same Q5 minus Q1 spread compounded on a log scale, where a straight line means a stable Sharpe rather than one lucky year. Right: the Fama-MacBeth premium in basis points. From <a href="https://github.com/superkush06/factor-zoo">factor-zoo</a>.</sub>
