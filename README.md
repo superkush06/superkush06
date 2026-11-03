@@ -19,13 +19,15 @@ Three of them run in your browser.
   <img alt="Python, NumPy, PyTorch, WebAssembly" src="tools-light.svg" width="460">
 </picture>
 
-## &#9654;&nbsp; [Pollute Lake Erie, in your browser](https://superkush06.github.io/aquatic-twin/)
+## &#9654;&nbsp; [A digital twin of Lake Erie, in your browser](https://superkush06.github.io/aquatic-twin/)
 
 <img src="https://raw.githubusercontent.com/superkush06/aquatic-twin/main/docs/demo.gif" width="100%" alt="a 3D model of Lake Erie where a bloom grows from river phosphorus, an oil spill hits the water, and currents reroute when the wind changes" />
 
 <sub>Recorded from the running solver and sped up. Depth is exaggerated 600x. Bloom growth is driven by river phosphorus, the slick by the currents, and the streaks by a surface flow recomputed when the wind changes.</sub>
 
-Click anywhere on the lake to spill oil, drag the wind, and watch the currents, the slick, fish habitat and fishing losses respond. It solves advection-diffusion-reaction for six fields on NOAA's real lakebed, 128 × 48 × 12 cells, in your tab, with currents from a wind-driven streamfunction that's divergence-free by construction. It's a screening model built with teammates at a 2026 Georgia Tech hackathon, where I built the solver and the AI operator, and many of its coefficients are placeholders. [Source](https://github.com/sjfan910/grokathon2026).
+A physics model of the whole lake on NOAA's real lakebed. Phosphorus, algae, oxygen, toxin, heat and oil move and react across 12 depth layers, 128 × 48 × 12 cells in your tab, carried by currents solved from the wind with a streamfunction that's divergence-free by construction. So blooms form, dead zones open under the thermocline, and toxin reaches Toledo's water intake, while an operator tests cleanup plans on copies of the solver and fish habitat and fishing losses update beside it. Change the wind or add a spill and all of it responds.
+
+I built the solver and the AI operator with teammates at a 2026 Georgia Tech hackathon. The live AI runs in [the full version](https://github.com/sjfan910/grokathon2026), and this demo uses a labelled simulated operator. It's a screening model: it ranks options, and many coefficients are placeholders.
 
 ## &#9654;&nbsp; [Train your own GPT, in your browser](https://superkush06.github.io/transformer-from-scratch/demo/)
 
